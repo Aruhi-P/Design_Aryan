@@ -23,3 +23,10 @@ Open `index.html` in Chrome. Internet access is required for the Supabase SDK an
 **Security**: `config.js` contains only a browser-safe publishable key; never add `service_role` or `sb_secret_...` credentials. RLS is required to keep users' records isolated. For a public launch, review anonymous sign-in abuse protection.
 
 **Criterion C**: Keep an accurate record of actual changes, screenshots and tests. The initial UI was AI-assisted; record later changes and bug fixes as they occur.
+
+## Fix: synchronized activity and progress screens
+- Marking or undoing a workout updates the shared saved state and refreshes the current activity display. Visit **Progress & Goals** to see the real 12-week chart, milestones, and recent activity.
+- Checking a habit in either **Dashboard** or **Habit Tracker** refreshes the visible counts. **Progress & Goals** now includes a current-week habit summary for all four habits.
+- Progress is saved locally first and sent to Supabase when configured; check the footer for cloud-save status.
+- For reliable checking: complete a workout, open Progress & Goals, check total/milestone, then tick a habit and check its weekly count. Refresh and repeat.
+- This is a bug-fix development stage for Criterion C; screenshots should show the observed app behavior after actual testing.
