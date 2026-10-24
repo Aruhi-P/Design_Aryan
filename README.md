@@ -30,3 +30,19 @@ Open `index.html` in Chrome. Internet access is required for the Supabase SDK an
 - Progress is saved locally first and sent to Supabase when configured; check the footer for cloud-save status.
 - For reliable checking: complete a workout, open Progress & Goals, check total/milestone, then tick a habit and check its weekly count. Refresh and repeat.
 - This is a bug-fix development stage for Criterion C; screenshots should show the observed app behavior after actual testing.
+
+
+## Changes in this update
+- Setup becomes a read-only summary after initial plan creation; later edits happen only in Adjust Plan.
+- Adjust Plan choices are drafts until **Save Changes** is pressed.
+- Progress chart and 12-week plan count saved completions using their recorded week rather than assuming the original days are still selected.
+- Progress chart displays numerical session counts above each week.
+- Every screen uses readable DM Sans instead of handwritten fonts.
+- Supabase configuration and database schema are unchanged.
+
+### Check the improvements
+1. Complete one activity, open Progress & Goals: Week 1 (or the current plan week) should increase by one.
+2. Undo it and check the count decreases.
+3. Set a different day in Adjust Plan, press Save Changes, and confirm recorded history remains visible.
+4. Return to Start / Setup; it should display a summary, not editable initial setup controls.
+5. Refresh to confirm the changes remain saved.

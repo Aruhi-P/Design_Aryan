@@ -22,3 +22,14 @@ body:has(.page-dashboard),body:has(.page-habits),body:has(.page-progress){backgr
 .setup-cards .card,.dashboard-cards .card{min-height:310px}.activity-preview{background:#f0ece2;border:2px solid #191919}.note{font-size:1.08rem}.hint{font-size:1.05rem}.week{background:#faf8f2;border:1.5px solid #bbb}.week.current{background:#e8e4dc}.progressbar{background:#d4cfc4;border:1.5px solid #555}.progressbar>span,.bar{background:#191919}.habit-table th{background:#191919}.footer{background:#faf8f2}
 @media(max-width:1100px){.three{grid-template-columns:repeat(3,minmax(0,1fr))}.three>.card:first-child{grid-column:auto}.nav{flex-wrap:wrap}}
 @media(max-width:800px){.three,.month-grid,.two{grid-template-columns:1fr}.setup-cards .card,.dashboard-cards .card{min-height:0}}
+
+/* Readable type throughout, while retaining Criterion B notebook colors and layout. */
+body,button,input,select,textarea,.brand-name,.head h1,.card h2,.card h3,.eyebrow,nav a,.btn,.pill,.note,.hint,.day,.setup-action .hint,.setup-cards .card .hint,.dashboard-footnote,.activity-preview strong{font-family:'DM Sans',Arial,Helvetica,sans-serif!important}
+body{font-size:15px;line-height:1.6}
+.head h1{font-size:clamp(2rem,3.6vw,2.7rem);font-weight:750;line-height:1.2;letter-spacing:-.04em}
+.card h2{font-size:1.25rem;font-weight:750;letter-spacing:-.015em}
+.card h3{font-size:1.07rem}.brand-name{font-size:1.12rem;font-weight:800;text-decoration:none}
+nav a{font-size:.82rem;font-weight:650}.btn{font-size:.92rem;font-weight:700;box-shadow:2px 2px 0 #777}
+.eyebrow{font-size:.77rem;font-weight:700;letter-spacing:.02em}.hint,.note{font-size:.84rem;line-height:1.5}.pill{font-size:.74rem}.day{font-size:.87rem}
+.head p,.card p,.small{font-size:.91rem}.bar-col .bar-value{display:block;font-size:.77rem;font-weight:700;margin-bottom:4px}.bar-col small{font-size:.72rem}
+.setup-cards .card .hint,.setup-action .hint,.dashboard-footnote{font-size:.88rem}
